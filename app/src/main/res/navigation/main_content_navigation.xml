@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content_navigation"
+    app:startDestination="@+id/fragment_home_page">
+
+    <fragment
+        android:id="@+id/fragment_home_page"
+        android:name="com.safa_book_release_project_print_line_str.presentation.screen.fragment.FragmentHomePage"
+        tools:layout="@layout/fragment_home_page"
+        android:label="fragment_home_page">
+        <action
+            android:id="@+id/action_fg_home_page_to_fg_user_library"
+            app:destination="@+id/fragment_user_library" />
+        <action
+            android:id="@+id/action_fg_home_page_to_fg_library_store"
+            app:destination="@+id/fragment_library_store" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragment_user_library"
+        android:name="com.safa_book_release_project_print_line_str.presentation.screen.fragment.FragmentUserLibrary"
+        tools:layout="@layout/fragment_user_library"
+        android:label="fragment_user_library" />
+
+    <fragment
+        android:id="@+id/fragment_library_store"
+        android:name="com.safa_book_release_project_print_line_str.presentation.screen.fragment.FragmentLibraryStore"
+        tools:layout="@layout/fragment_library_store"
+        android:label="fragment_library_store" >
+    </fragment>
+
+</navigation>
